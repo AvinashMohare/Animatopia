@@ -40,12 +40,14 @@ function loaderAnimation() {
         x: 200,
         stagger: 0.2,
         duration: 1.4,
+        opacity: 0,
         ease: Power3.easeInOut,
     })
         .to("#loader .parent .child", {
             y: "-100%",
             duration: 1,
             delay: 0,
+            opacity: 1,
             ease: Circ.easeInOut,
         })
         .to("#loader", {

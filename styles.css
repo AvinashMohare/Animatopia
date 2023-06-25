@@ -5,7 +5,7 @@
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 
-    max-width: 2000px;
+    max-width: 2050px;
     margin: auto;
 }
 
@@ -106,7 +106,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.8vw;
     color: #000;
 }
 
@@ -118,7 +118,7 @@ body {
     width: 100%;
     color: #333;
     padding: 0 7vw;
-    line-height: 1.13;
+    line-height: 1;
     /* padding-right: 15vw; */
 }
 
@@ -154,3 +154,4 @@ path,
 polyline {
     stroke: #14cf93;
 }
+
