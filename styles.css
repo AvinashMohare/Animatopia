@@ -1,5 +1,5 @@
 * {
-    /* margin: 0; */
+    margin: 0;
     padding: 0;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -22,7 +22,7 @@ body {
 #loader {
     /* display: none; */
     z-index: 99999;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     background-color: #111;
@@ -95,11 +95,10 @@ body {
 #home #nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: space-around;
     padding: 0 5vw;
     width: 100%;
-    height: 100px;
+    height: 6vw;
 }
 
 #nav a {
@@ -155,3 +154,76 @@ polyline {
     stroke: #14cf93;
 }
 
+#imagery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28vw;
+    width: 100%;
+    /* height: fit-content; */
+    padding: 0 7vw;
+    /* background-color: yellow; */
+}
+
+#imagery #imglef {
+    width: 30%;
+    height: auto;
+}
+
+#imglef h1 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 2vw;
+    color: #333;
+}
+
+#imglef h1 span {
+    color: #14cf93;
+    font-family: "Mazius Review 20.09";
+    font-weight: 100;
+    font-style: italic;
+}
+
+#imgrig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 60%;
+    height: 300px;
+}
+
+#imgrig .imgcntnr {
+    position: absolute;
+    border-radius: 2vw;
+    width: 30vw;
+    height: 45vw;
+    filter: grayscale();
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    background-color: red;
+}
+
+#imgrig .imgcntnr:hover {
+    filter: grayscale(0);
+}
+
+#imgrig .imgcntnr:nth-child(1) {
+    transform: translate(-20%, -8%) rotate(-20deg);
+    background-image: url(https://abhishekjha.me/card1.a0552dbc.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#imgrig .imgcntnr:nth-child(2) {
+    transform: translate(0%, 0%) rotate(-15deg);
+    background-image: url(https://abhishekjha.me/card2.cfc820ab.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#imgrig .imgcntnr:nth-child(3) {
+    transform: translate(20%, 10%) rotate(-5deg);
+    background-image: url(https://abhishekjha.me/card3.b705d81b.png);
+    background-size: cover;
+    background-position: center;
+}

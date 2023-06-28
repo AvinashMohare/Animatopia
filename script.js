@@ -37,7 +37,7 @@ function loaderAnimation() {
     var tl = gsap.timeline();
 
     tl.from("#loader .child span", {
-        x: 200,
+        x: 100,
         stagger: 0.2,
         duration: 1.4,
         opacity: 0,
